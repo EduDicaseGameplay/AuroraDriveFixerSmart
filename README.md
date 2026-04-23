@@ -30,42 +30,42 @@ A ferramenta atua diretamente no banco de dados do Aurora, ajustando referência
 
 ### Aviso de backup
 <p align="center">
-  <img src="assets/Screenshot3.png" width="800"/>
+  <img src="assets/screenshot3.png" width="800"/>
 </p>
 
 ### Escolha do drive (serial correto)
 <p align="center">
-  <img src="assets/Screenshot4.png" width="800"/>
+  <img src="assets/screenshot4.png" width="800"/>
 </p>
 
 ### Confirmação do drive selecionado
 <p align="center">
-  <img src="assets/Screenshot5.png" width="800"/>
+  <img src="assets/screenshot5.png" width="800"/>
 </p>
 
 ### Escolha entre corrigir Scanpaths e/ou Title Updates
 <p align="center">
-  <img src="assets/Screenshot6.png" width="800"/>
+  <img src="assets/screenshot6.png" width="800"/>
 </p>
 
 ### Scanpaths encontrados
 <p align="center">
-  <img src="assets/Screenshot7.png" width="800"/>
+  <img src="assets/screenshot7.png" width="800"/>
 </p>
 
 ### Title Updates encontrados
 <p align="center">
-  <img src="assets/Screenshot8.png" width="800"/>
+  <img src="assets/screenshot8.png" width="800"/>
 </p>
 
 ### Resultado final (resumo das alterações)
 <p align="center">
-  <img src="assets/Screenshot9.png" width="800"/>
+  <img src="assets/screenshot9.png" width="800"/>
 </p>
 
 ### Scanpaths corrigidos (sem erro)
 <p align="center">
-  <img src="assets/Screenshot10.png" width="800"/>
+  <img src="assets/screenshot10.png" width="800"/>
 </p>
 ---
 
