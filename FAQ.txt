@@ -1,0 +1,46 @@
+📌 **FAQ RÁPIDO – Aurora Drive Fixer Smart**
+
+❓ Funciona em qualquer Xbox 360?
+👉 Funciona em consoles com Aurora (RGH/JTAG ou Exploit).
+
+❓ Precisa de RGH ou Exploit?
+👉 Sim 👍 (qualquer método que rode Aurora com suporte a scripts)
+
+❓ Isso apaga meus jogos?
+👉 Não. Só altera o banco de dados da Aurora (scanpaths e TUs).
+
+❓ Preciso fazer backup?
+👉 Recomendado 👍
+Local do banco:
+Data\Databases\content.db
+ou
+User\Data\Databases\content.db
+
+❓ Isso baixa Title Update?
+👉 Não. Só corrige o vínculo deles no sistema.
+
+❓ Serve pra HD externo / pendrive?
+👉 Sim, principalmente em casos de clonagem 👍
+
+❓ Meu jogo sumiu, isso resolve?
+👉 Na maioria dos casos sim (quando é problema de scanpath/deviceID).
+
+❓ Qual a diferença pro script do EmiMods?
+👉 Ambos resolvem o mesmo problema de forma segura 👍
+
+A diferença é na abordagem:
+o dele é mais conservador (evita certas alterações),
+e o meu é mais automático e trata duplicatas de forma inteligente.
+
+São formas diferentes de resolver a mesma situação.
+
+❓ Pode dar erro?
+👉 Pode, por isso recomendo backup.
+Mas o script tem proteção pra evitar travamentos.
+
+❓ Precisa reiniciar a Aurora?
+👉 Sim, no final 👍
+
+---
+
+💡 Se ajudou, deixa o like e comenta qualquer dúvida 👊
