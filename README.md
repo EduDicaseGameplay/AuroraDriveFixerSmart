@@ -20,12 +20,12 @@ A ferramenta atua diretamente no banco de dados do Aurora, ajustando referência
 
 ### Scanpaths com erro
 <p align="center">
-  <img src="assets/Screenshot1.png" width="800"/>
+  <img src="assets/screenshot1.png" width="800"/>
 </p>
 
 ### Escolha do script
 <p align="center">
-  <img src="assets/Screenshot2.png" width="800"/>
+  <img src="assets/screenshot2.png" width="800"/>
 </p>
 
 ### Aviso de backup
