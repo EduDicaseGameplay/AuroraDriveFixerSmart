@@ -1,174 +1,186 @@
 # 🚀 Aurora Drive Fixer Smart
 
-Ferramenta inteligente para corrigir inconsistências no Aurora após troca ou clonagem de dispositivos.
+A smart utility designed to fix common Aurora issues after replacing or cloning storage devices.
 
 ---
 
-## 📌 Sobre
+## 📌 About
 
-O **Aurora Drive Fixer Smart** foi desenvolvido para corrigir automaticamente problemas comuns causados por clonagem ou troca de HD/USB no Aurora, como:
+**Aurora Drive Fixer Smart** was developed to automatically repair common issues caused by hard drive or USB cloning/replacement in Aurora, such as:
 
-* Jogos que não aparecem
-* Capas acinzentadas (grayed-out)
-* Title Updates que não funcionam
+* Games not appearing in the library
+* Grayed-out game covers
+* Title Updates (TUs) no longer working
 
-A ferramenta atua diretamente no banco de dados do Aurora, ajustando referências internas de forma segura e controlada.
+The tool safely updates Aurora's database by correcting internal references in a controlled manner.
 
 ---
 
 ## 🖼️ Preview
 
-### Scanpaths com erro
+### Broken Scan Paths
+
 <p align="center">
   <img src="assets/screenshot1.png" width="800"/>
 </p>
 
-### Escolha do script
+### Script Selection
+
 <p align="center">
   <img src="assets/screenshot2.png" width="800"/>
 </p>
 
-### Aviso de backup
+### Backup Warning
+
 <p align="center">
   <img src="assets/screenshot3.png" width="800"/>
 </p>
 
-### Escolha do drive (serial correto)
+### Drive Selection (Correct Serial Number)
+
 <p align="center">
   <img src="assets/screenshot4.png" width="800"/>
 </p>
 
-### Confirmação do drive selecionado
+### Selected Drive Confirmation
+
 <p align="center">
   <img src="assets/screenshot5.png" width="800"/>
 </p>
 
-### Escolha entre corrigir Scanpaths e/ou Title Updates
+### Choose to Repair Scan Paths and/or Title Updates
+
 <p align="center">
   <img src="assets/screenshot6.png" width="800"/>
 </p>
 
-### Scanpaths encontrados
+### Scan Paths Found
+
 <p align="center">
   <img src="assets/screenshot7.png" width="800"/>
 </p>
 
-### Title Updates encontrados
+### Title Updates Found
+
 <p align="center">
   <img src="assets/screenshot8.png" width="800"/>
 </p>
 
-### Resultado final (resumo das alterações)
+### Final Results (Summary of Changes)
+
 <p align="center">
   <img src="assets/screenshot9.png" width="800"/>
 </p>
 
-### Scanpaths corrigidos (sem erro)
+### Scan Paths Successfully Repaired
+
 <p align="center">
   <img src="assets/screenshot10.png" width="800"/>
 </p>
----
-
-## 🧠 Principais Funcionalidades
-
-* 🔧 Correção automática de **Scan Paths**
-* 🔄 Ajuste de **Title Updates (TUs)**
-* 🧬 **Detecção e remoção de duplicatas reais** de TUs
-* 🔍 Identificação de dispositivo por **Serial**
-* 👁️ Pré-visualização das alterações antes da aplicação
-* 📊 Relatório final com:
-
-  * Itens corrigidos
-  * Falhas
-  * Duplicatas removidas
 
 ---
 
-## 🛡️ Segurança
+## 🧠 Key Features
 
-* ✔️ Nenhuma alteração é feita sem confirmação do usuário
-* ✔️ Uso de tratamento de erro (`pcall`) para evitar falhas críticas
-* ✔️ Verificação antes de aplicar alterações
-* ⚠️ Recomendação explícita de backup antes da execução
+* 🔧 Automatic **Scan Path** repair
+* 🔄 Repairs **Title Update (TU)** associations
+* 🧬 Detects and removes **true duplicate** Title Updates
+* 🔍 Identifies storage devices by **serial number**
+* 👁️ Preview changes before applying them
+* 📊 Displays a final report including:
 
-> ⚠️ **Importante:**
-> O script **não cria backup automaticamente**.
-> É altamente recomendado que você faça um backup manual do banco de dados antes de utilizar.
-
----
-
-## 📦 Quando usar
-
-Utilize esta ferramenta nos seguintes cenários:
-
-* 🔁 Após **clonagem de HD ou pendrive**
-* 💾 Após **troca de dispositivo de armazenamento**
-* 🎮 Quando jogos **não aparecem na Aurora**
-* ⚙️ Quando **Title Updates não são aplicados**
+  * Repaired items
+  * Errors (if any)
+  * Removed duplicates
 
 ---
 
-## 📂 Backup (Recomendado)
+## 🛡️ Safety
 
-Antes de executar o script, faça backup do arquivo:
+* ✔️ No changes are made without user confirmation
+* ✔️ Uses protected error handling (`pcall`) to prevent critical failures
+* ✔️ Verifies data before applying modifications
+* ⚠️ Clearly recommends creating a backup before running the script
 
-```
+> ⚠️ **Important:**
+> This script **does not create backups automatically**.
+> It is strongly recommended to manually back up Aurora's database before using it.
+
+---
+
+## 📦 When to Use
+
+Use this tool in the following situations:
+
+* 🔁 After **cloning a hard drive or USB storage device**
+* 💾 After **replacing a storage device**
+* 🎮 When **games no longer appear in Aurora**
+* ⚙️ When **Title Updates are no longer applied**
+
+---
+
+## 📂 Backup (Recommended)
+
+Before running the script, back up one of the following database files:
+
+```text
 Data\Databases\content.db
 ```
 
-ou
+or
 
-```
+```text
 User\Data\Databases\content.db
 ```
 
 ---
 
-## ⚙️ Como funciona
+## ⚙️ How It Works
 
-1. Você seleciona o dispositivo correto (baseado no serial)
-2. O script identifica inconsistências no banco
-3. Exibe uma prévia das alterações
-4. Aplica as correções com segurança
-5. Exibe um resumo final
-
----
-
-## 🔄 Recomendação
-
-Após a execução, **reinicie a Aurora** para garantir que todas as alterações sejam aplicadas corretamente.
+1. Select the correct storage device (identified by its serial number).
+2. The script scans Aurora's database for inconsistencies.
+3. A preview of the proposed changes is displayed.
+4. Repairs are safely applied.
+5. A final summary is shown.
 
 ---
 
-## 🙏 Créditos
+## 🔄 Recommendation
 
-Este projeto foi inspirado no script **Aurora Cloned Drive Fixer**, desenvolvido por EmiMods.
-
-A proposta deste script evolui a ideia original, trazendo:
-
-* Maior automação
-* Tratamento inteligente de dados
-* Remoção de duplicatas
-
-🔗 Projeto original: [https://github.com/EmiMods/FixClonedDrive](https://github.com/EmiMods/FixClonedDrive)
-👤 Autor: EmiMods
+After the script completes, **restart Aurora** to ensure all changes are properly applied.
 
 ---
 
-## ⚠️ Aviso
+## 🙏 Credits
 
-Use esta ferramenta apenas quando necessário.
+This project was inspired by **Aurora Cloned Drive Fixer**, created by **EmiMods**.
 
-Alterações diretas no banco de dados podem causar inconsistências se utilizadas de forma incorreta ou fora do cenário adequado.
+Aurora Drive Fixer Smart expands upon the original concept by introducing:
+
+* Greater automation
+* Smarter database handling
+* Intelligent duplicate detection and removal
+
+🔗 Original project: https://github.com/EmiMods/FixClonedDrive
+
+👤 Original author: EmiMods
+
+---
+
+## ⚠️ Disclaimer
+
+Use this tool only when necessary.
+
+Direct modifications to Aurora's database may cause inconsistencies if used improperly or outside of its intended purpose.
 
 ---
 
 ## 📌 Status
 
-🟢 Estável — pronto para uso
+🟢 Stable — Ready for use.
 
 ---
 
-## 💬 Contribuição
+## 💬 Contributing
 
-Sugestões, melhorias e feedback são bem-vindos!
+Suggestions, improvements, bug reports, and feedback are always welcome!

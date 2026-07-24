@@ -1,46 +1,54 @@
-📌 **FAQ RÁPIDO – Aurora Drive Fixer Smart**
+# 📌 **QUICK FAQ – Aurora Drive Fixer Smart**
 
-❓ Funciona em qualquer Xbox 360?
-👉 Funciona em consoles com Aurora (RGH/JTAG ou Exploit).
+❓ **Does it work on any Xbox 360?**
+👉 It works on Xbox 360 consoles running Aurora (RGH/JTAG or other compatible exploits).
 
-❓ Precisa de RGH ou Exploit?
-👉 Sim 👍 (qualquer método que rode Aurora com suporte a scripts)
+❓ **Do I need RGH or an exploit?**
+👉 Yes 👍 (any setup capable of running Aurora with script support).
 
-❓ Isso apaga meus jogos?
-👉 Não. Só altera o banco de dados da Aurora (scanpaths e TUs).
+❓ **Will it delete my games?**
+👉 No. It only modifies Aurora's database (scan paths and Title Update associations).
 
-❓ Preciso fazer backup?
-👉 Recomendado 👍
-Local do banco:
+❓ **Should I make a backup?**
+👉 Yes, it's highly recommended 👍
+
+Database locations:
+
+```
 Data\Databases\content.db
-ou
+```
+
+or
+
+```
 User\Data\Databases\content.db
+```
 
-❓ Isso baixa Title Update?
-👉 Não. Só corrige o vínculo deles no sistema.
+❓ **Does it download Title Updates?**
+👉 No. It only repairs their associations within Aurora.
 
-❓ Serve pra HD externo / pendrive?
-👉 Sim, principalmente em casos de clonagem 👍
+❓ **Does it work with external hard drives or USB flash drives?**
+👉 Yes, especially after cloning or migrating a storage device 👍
 
-❓ Meu jogo sumiu, isso resolve?
-👉 Na maioria dos casos sim (quando é problema de scanpath/deviceID).
+❓ **My game disappeared. Will this fix it?**
+👉 In most cases, yes—if the issue is related to scan paths or the device ID.
 
-❓ Qual a diferença pro script do EmiMods?
-👉 Ambos resolvem o mesmo problema de forma segura 👍
+❓ **What's the difference between this and EmiMods' script?**
+👉 Both scripts safely solve the same problem 👍
 
-A diferença é na abordagem:
-o dele é mais conservador (evita certas alterações),
-e o meu é mais automático e trata duplicatas de forma inteligente.
+The difference is in their approach:
 
-São formas diferentes de resolver a mesma situação.
+* EmiMods' script is more conservative and avoids certain modifications.
+* Aurora Drive Fixer Smart is more automated and intelligently handles duplicate entries.
 
-❓ Pode dar erro?
-👉 Pode, por isso recomendo backup.
-Mas o script tem proteção pra evitar travamentos.
+Both are valid solutions to the same issue.
 
-❓ Precisa reiniciar a Aurora?
-👉 Sim, no final 👍
+❓ **Can something go wrong?**
+👉 As with any database modification, there's always some risk, which is why a backup is recommended. The script also includes safeguards to help prevent crashes.
+
+❓ **Do I need to restart Aurora?**
+👉 Yes, after the script finishes 👍
 
 ---
 
-💡 Se ajudou, deixa o like e comenta qualquer dúvida 👊
+💡 **If this script helped you, please leave a like and feel free to comment if you have any questions!** 👊
