@@ -1,18 +1,18 @@
 # 🚀 Aurora Drive Fixer Smart
 
-A smart utility designed to fix common Aurora issues after replacing or cloning storage devices.
+A smart utility designed to repair Aurora Scan Paths and Title Updates after replacing, cloning, or migrating storage devices.
 
 ---
 
 ## 📌 About
 
-**Aurora Drive Fixer Smart** was developed to automatically repair common issues caused by hard drive or USB cloning/replacement in Aurora, such as:
+**Aurora Drive Fixer Smart** was developed to automatically repair common Aurora issues caused by replacing, cloning, or migrating hard drives and USB storage devices.
 
-* Games not appearing in the library
-* Grayed-out game covers
-* Title Updates (TUs) no longer working
+The script safely updates Aurora's database by correcting internal Scan Path and Title Update references using the selected device's serial number.
 
-The tool safely updates Aurora's database by correcting internal references in a controlled manner.
+Before applying any changes, the script displays a preview of the detected repairs, allowing you to review the modifications in advance. It also detects true duplicate Title Updates already associated with the selected device and safely removes only redundant database entries.
+
+The entire repair process is interactive, protected against unexpected errors, and finishes with a detailed summary of all operations performed.
 
 ---
 
@@ -82,27 +82,36 @@ The tool safely updates Aurora's database by correcting internal references in a
 
 ## 🧠 Key Features
 
-* 🔧 Automatic **Scan Path** repair
-* 🔄 Repairs **Title Update (TU)** associations
-* 🧬 Detects and removes **true duplicate** Title Updates
-* 🔍 Identifies storage devices by **serial number**
-* 👁️ Preview changes before applying them
+* 🛠️ Automatically repairs invalid Aurora database references after replacing, cloning, or migrating storage devices.
+* 🔧 Automatic **Scan Path** repair.
+* 🔄 Automatic **Title Update (TU)** repair.
+* 🧬 Detects and safely removes **true duplicate** Title Updates.
+* 🔍 Identifies storage devices by **serial number**.
+* 👁️ Preview Scan Path changes before applying them.
+* 👁️ Preview Title Update changes before applying them.
+* ⚙️ Option to repair **Title Updates only**.
 * 📊 Displays a final report including:
-
-  * Repaired items
-  * Errors (if any)
-  * Removed duplicates
+  * Successfully repaired Scan Paths.
+  * Successfully repaired Title Updates.
+  * Removed duplicate Title Updates.
+  * Errors (if any).
+* 🔁 Optionally restart Aurora after the repair.
+* 🛡️ Protected database operations using `pcall`.
 
 ---
 
 ## 🛡️ Safety
 
-* ✔️ No changes are made without user confirmation
-* ✔️ Uses protected error handling (`pcall`) to prevent critical failures
-* ✔️ Verifies data before applying modifications
-* ⚠️ Clearly recommends creating a backup before running the script
+* ✔️ No changes are made without user confirmation.
+* ✔️ Confirms the selected storage device before making changes.
+* ✔️ Displays detected Scan Paths before repairing them.
+* ✔️ Displays detected Title Updates before repairing them.
+* ✔️ Uses protected error handling (`pcall`) to prevent unexpected failures.
+* ✔️ Verifies data before applying modifications.
+* ⚠️ Clearly recommends creating a backup before running the script.
 
 > ⚠️ **Important:**
+>
 > This script **does not create backups automatically**.
 > It is strongly recommended to manually back up Aurora's database before using it.
 
@@ -112,10 +121,13 @@ The tool safely updates Aurora's database by correcting internal references in a
 
 Use this tool in the following situations:
 
-* 🔁 After **cloning a hard drive or USB storage device**
-* 💾 After **replacing a storage device**
-* 🎮 When **games no longer appear in Aurora**
-* ⚙️ When **Title Updates are no longer applied**
+* 🔁 After **cloning a hard drive or USB storage device**.
+* 💾 After **replacing a storage device**.
+* 🔄 After **migrating Aurora to another drive**.
+* 🎮 When **games no longer appear in Aurora**.
+* 🩶 When **game covers appear grayed out**.
+* ⚙️ When **Title Updates are no longer applied**.
+* 📂 When **Scan Paths still reference the old storage device**.
 
 ---
 
@@ -138,10 +150,13 @@ User\Data\Databases\content.db
 ## ⚙️ How It Works
 
 1. Select the correct storage device (identified by its serial number).
-2. The script scans Aurora's database for inconsistencies.
-3. A preview of the proposed changes is displayed.
-4. Repairs are safely applied.
-5. A final summary is shown.
+2. Choose whether to repair **Scan Paths** together with **Title Updates**, or repair **Title Updates only**.
+3. The script scans Aurora's database looking for entries that need to be updated.
+4. A preview of the detected changes is displayed before any modification is made.
+5. Scan Paths and/or Title Updates are safely repaired.
+6. True duplicate Title Updates are automatically detected and safely removed.
+7. A detailed summary of all operations is displayed.
+8. Optionally restart Aurora to immediately apply the changes.
 
 ---
 
@@ -149,21 +164,21 @@ User\Data\Databases\content.db
 
 After the script completes, **restart Aurora** to ensure all changes are properly applied.
 
+The script also provides the option to restart Aurora automatically after the repair process finishes.
+
 ---
 
 ## 🙏 Credits
 
 This project was inspired by **Aurora Cloned Drive Fixer**, created by **EmiMods**.
 
-Aurora Drive Fixer Smart expands upon the original concept by introducing:
+Aurora Drive Fixer Smart builds upon the same idea while focusing on providing a safer and more user-friendly repair experience for Aurora users.
 
-* Greater automation
-* Smarter database handling
-* Intelligent duplicate detection and removal
+🔗 Original project:
+https://github.com/EmiMods/FixClonedDrive
 
-🔗 Original project: https://github.com/EmiMods/FixClonedDrive
-
-👤 Original author: EmiMods
+👤 Original author:
+EmiMods
 
 ---
 
@@ -171,7 +186,9 @@ Aurora Drive Fixer Smart expands upon the original concept by introducing:
 
 Use this tool only when necessary.
 
-Direct modifications to Aurora's database may cause inconsistencies if used improperly or outside of its intended purpose.
+Although every repair is performed using protected database operations, modifying Aurora's database incorrectly or using the script outside its intended purpose may still lead to unexpected database inconsistencies.
+
+For this reason, creating a backup before running the script is strongly recommended.
 
 ---
 
@@ -184,3 +201,7 @@ Direct modifications to Aurora's database may cause inconsistencies if used impr
 ## 💬 Contributing
 
 Suggestions, improvements, bug reports, and feedback are always welcome!
+
+If you encounter an issue or have ideas to improve Aurora Drive Fixer Smart, feel free to open an Issue or submit a Pull Request.
+
+Community contributions help make this project better for everyone.
